@@ -6,6 +6,8 @@ div.base {
   width: 100vmin;
   height: 60vmin;
   position: absolute;
+  left: 0;
+  top: 0;
 }
 div .circle {
   position: absolute;
