@@ -1,18 +1,18 @@
 div {
   display: block;
-  }
+}
 div.base {
   background-color: #006A4E;
-  width: calc(100vmin * 1);
-  height: calc(100vmin * 0.6);
+  width: 100vmin;
+  height: 60vmin;
   position: absolute;
 }
 div .circle {
   position: absolute;
   background-color: #F42A41;
-  width: calc(100vmin * 0.4);
-  height: calc(100vmin * 0.4);
-  left: calc(100vmin * 0.25);
-  top: calc(100vmin * 0.1);
+  width: 40vmin;
+  height: 40vmin;
+  left: 25vmin;
+  top: 10vmin;
   border-radius: 100vmin;
 }
