@@ -1,9 +1,9 @@
 (function ( $ ) {
   $( window ).load( function () {
     var $scssData = '';
-    $.get( '//raw.githubusercontent.com/fa7ad/flag-css-bd/gh-pages/_flag.scss', function ( $Data ) {
+    $.get( 'flag.scss', function ( $Data ) {
       $scssData += $Data;
-      $.get( '//raw.githubusercontent.com/fa7ad/flag-css-bd/gh-pages/app.scss', function ( $data ) {
+      $.get( 'app.scss', function ( $data ) {
         $scssData += $data.split( "\n" ).slice( 1 ).join( "\n" );
         $.ajax( {
           url: "http://alloy.divshot.com/compile", type: "POST", dataType: "text", data: {
