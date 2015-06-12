@@ -1,9 +1,9 @@
 (function ( $ ) {
   $( window ).load( function () {
     var $scssData = '';
-    $.get( './_flag.scss', function ( $Data ) {
+    $.get( '_flag.scss', function ( $Data ) {
       $scssData += $Data;
-      $.get( './app.scss', function ( $data ) {
+      $.get( 'app.scss', function ( $data ) {
         $scssData += $data.split( "\n" ).slice( 1 ).join( "\n" );
         $.ajax( {
           url: "http://alloy.divshot.com/compile", type: "POST", dataType: "text", data: {
