@@ -3,8 +3,8 @@ div {
 }
 div.base {
   background-color: #006A4E;
-  width: 100em;
-  height: 60em;
+  width: 100vmax;
+  height: 60vmax;
   position: absolute;
   left: 0;
   top: 0;
@@ -12,9 +12,9 @@ div.base {
 div .circle {
   position: absolute;
   background-color: #F42A41;
-  width: 40em;
-  height: 40em;
-  left: 25em;
-  top: 10em;
-  border-radius: 100em;
+  width: 40vmax;
+  height: 40vmax;
+  left: 25vmax;
+  top: 10vmax;
+  border-radius: 100vmax;
 }
