@@ -5,7 +5,7 @@ Bangladeshi Flag Using CSS
 
 ## To use in a project
 * Clone the repo
-* Import the partial `_flag.scss`
+* Import the mixin (`flag.scss`)
 * Create your markup
 ```html
 <div id="flag_element">
