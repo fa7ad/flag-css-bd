@@ -5,10 +5,12 @@
       $scssData += $Data;
       $.get( 'app.scss', function ( $data ) {
         $scssData += $data.split( "\n" ).slice( 1 ).join( "\n" );
+        console.log( $scssData );
         $.ajax( {
           url: "http://alloy.divshot.com/compile", type: "POST", dataType: "text", data: {
             compress: true, type: "scss", source: $scssData
           }, success: function ( css ) {
+            console.log( css );
             $( 'body' ).append( '<link rel="stylesheet" href="data:text/css;base64,' + btoa( css ) + '"/>' );
           }
         } );
