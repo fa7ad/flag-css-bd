@@ -1,0 +1,18 @@
+@mixin flag($width){
+  display: block;
+  .base {
+    background-color: #006A4E;
+    width: $width;
+    height: ($width * 0.6);
+    position: absolute;
+    .circle {
+      position: absolute;
+      background-color: #F42A41;
+      width: ($width * 0.4);
+      height: ($width * 0.4);
+      left: ($width * 0.25);
+      top: ($width * 0.1);
+      border-radius: $width;
+    }
+  }
+}
